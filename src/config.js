@@ -184,7 +184,7 @@ var config = {
 				
 		
 		{
-			group: 'Lit-Iluminación-Il·luminació',
+			group: 'Percep',
 			title: 'Lit:perceived=none',
 			query: '(node["lit:perceived"="none"]({{bbox}}););out meta;',
 			iconSrc: imgSrc + 'icones_llum/lit_osm_none.svg',
@@ -200,7 +200,7 @@ var config = {
 			}
 		},
 		{
-			group: 'Lit-Iluminación-Il·luminació',
+			group: 'Percep',
 			title: 'Lit:perceived=minimal',
 			query: '(node["lit:perceived"="minimal"]({{bbox}}););out meta;',
 			iconSrc: imgSrc + 'icones_llum/lit_osm_minimal.svg',
@@ -216,7 +216,7 @@ var config = {
 			}
 		},
 		{
-			group: 'Lit-Iluminación-Il·luminació',
+			group: 'Percep',
 			title: 'Lit:perceived=poor',
 			query: '(node["lit:perceived"="poor"]({{bbox}}););out meta;',
 			iconSrc: imgSrc + 'icones_llum/lit_osm_poor.svg',
@@ -232,7 +232,7 @@ var config = {
 			}
 		},
 		{
-			group: 'Lit-Iluminación-Il·luminació',
+			group: 'Percep',
 			title: 'Lit:perceived=good',
 			query: '(node["lit:perceived"="good"]({{bbox}}););out meta;',
 			iconSrc: imgSrc + 'icones_llum/lit_osm_good.svg',
@@ -248,7 +248,7 @@ var config = {
 			}
 		},
 		{
-			group: 'Lit-Iluminación-Il·luminació',
+			group: 'Percep',
 			title: 'Lit:perceived=daylike',
 			query: '(node["lit:perceived"="daylike"]({{bbox}}););out meta;',
 			iconSrc: imgSrc + 'icones_llum/lit_osm_daylike.svg',
@@ -264,9 +264,9 @@ var config = {
 			}
 		},
 		{
-			group: 'Perception-Percepción-Percepció',
-			title: 'Vorera adaptada',
-			query: '(way[wheelchair=yes][highway=footway][footway=sidewalk]({{bbox}});node(w););out;',
+			group: 'Light',
+			title: 'Yes-Sí',
+			query: '(nwr["highway"~"residential|living_street|pedestrian|tertiary|service|unclassified|secondary|primary|trunk|motorway|tertiary_link|secondary_link|primary_link|trunk_link|motorway_link|footway"][lit=yes]({{bbox}});way(r)({{bbox}});node(w););out skel;',
 			iconSrc: imgSrc + 'base/line.png',
 			iconStyle: 'background-color:#40E0D0',
 			style: function () {

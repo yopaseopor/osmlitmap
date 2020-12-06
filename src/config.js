@@ -184,23 +184,23 @@ var config = {
 				
 		
 		{
-			group: 'Wheelchair',
-			title: 'Wheelchair=yes',
-			query: '(node[wheelchair=yes][shop]({{bbox}});node[wheelchair=yes][amenity]({{bbox}});node[wheelchair=yes][office]({{bbox}}););out meta;',
-			iconSrc: imgSrc + 'accessibilitat/wheelchair_yes_shop.svg',
+			group: 'Lit-Iluminación-Il·luminació',
+			title: 'Lit:perceived=none',
+			query: '(node[lit:perceived=none]({{bbox}}););out meta;',
+			iconSrc: imgSrc + 'icones_llum/lit_osm_none.svg',
 			iconStyle: 'background-color:#714601',
 						scale: 0.25,
 			style: function () {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
-						src: imgSrc + 'accessibilitat/wheelchair_yes_shop.svg'
+						src: imgSrc + 'icones_llum/lit_osm_none.svg'
 					})
 				});
 				return style;
 			}
 		},
 		{
-			group: 'Wheelchair',
+			group: 'Lit-Iluminación-Il·luminació',
 			title: 'Wheelchair=limited',
 			query: '(node[wheelchair=limited][shop]({{bbox}});node[wheelchair=limited][amenity]({{bbox}});node[wheelchair=limited][office]({{bbox}}););out meta;',
 			iconSrc: imgSrc + 'accessibilitat/wheelchair_limited_shop.svg',
@@ -216,8 +216,8 @@ var config = {
 			}
 		},
 		{
-			group: 'Wheelchair',
-			title: 'Wheelchair=no',
+			group: 'Lit-Iluminación-Il·luminació',
+			title: 'lit:perceived=none',
 			query: '(node[wheelchair=no][shop]({{bbox}});node[wheelchair=no][amenity]({{bbox}});node[wheelchair=no][office]({{bbox}}););out meta;',
 			iconSrc: imgSrc + 'accessibilitat/wheelchair_no_shop.svg',
 			iconStyle: 'background-color:#714601',
@@ -232,7 +232,7 @@ var config = {
 			}
 		},
 		{
-			group: 'Wheelchair',
+			group: 'Lit-Iluminación-Il·luminació',
 			title: 'Falta Wheelchair',
 			query: '(node[!wheelchair][shop]({{bbox}});node[!wheelchair][amenity]({{bbox}});node[!wheelchair][office]({{bbox}}););out meta;',
 			iconSrc: imgSrc + 'accessibilitat/wheelchair_unknown.svg',
@@ -248,7 +248,7 @@ var config = {
 			}
 		},
 		{
-			group: 'Voreres',
+			group: 'Perception-Percepción-Percepció',
 			title: 'Vorera adaptada',
 			query: '(way[wheelchair=yes][highway=footway][footway=sidewalk]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'base/line.png',

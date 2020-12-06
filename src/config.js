@@ -185,7 +185,7 @@ var config = {
 		
 		{
 			group: 'Percep',
-			title: 'Lit:perceived=none',
+			title: 'No hi ha llum',
 			query: '(node["lit:perceived"="none"]({{bbox}}););out meta;',
 			iconSrc: imgSrc + 'icones_llum/lit_osm_none.svg',
 			iconStyle: 'background-color:#FFFFFF',
@@ -201,7 +201,7 @@ var config = {
 		},
 		{
 			group: 'Percep',
-			title: 'Lit:perceived=minimal',
+			title: 'Llum mínima',
 			query: '(node["lit:perceived"="minimal"]({{bbox}}););out meta;',
 			iconSrc: imgSrc + 'icones_llum/lit_osm_minimal.svg',
 			iconStyle: 'background-color:#FFFFFF',
@@ -217,7 +217,7 @@ var config = {
 		},
 		{
 			group: 'Percep',
-			title: 'Lit:perceived=poor',
+			title: 'Llum pobra',
 			query: '(node["lit:perceived"="poor"]({{bbox}}););out meta;',
 			iconSrc: imgSrc + 'icones_llum/lit_osm_poor.svg',
 			iconStyle: 'background-color:#FFFFFF',
@@ -233,7 +233,7 @@ var config = {
 		},
 		{
 			group: 'Percep',
-			title: 'Lit:perceived=good',
+			title: 'Bona llum',
 			query: '(node["lit:perceived"="good"]({{bbox}}););out meta;',
 			iconSrc: imgSrc + 'icones_llum/lit_osm_good.svg',
 			iconStyle: 'background-color:#FFFFFF',
@@ -249,7 +249,7 @@ var config = {
 		},
 		{
 			group: 'Percep',
-			title: 'Lit:perceived=daylike',
+			title: 'Com si fos de dia',
 			query: '(node["lit:perceived"="daylike"]({{bbox}}););out meta;',
 			iconSrc: imgSrc + 'icones_llum/lit_osm_daylike.svg',
 			iconStyle: 'background-color:#FFFFFF',
@@ -265,7 +265,7 @@ var config = {
 		},
 		{
 			group: 'Light',
-			title: 'Llum sí',
+			title: 'Enllumenat sí',
 			query: '(way[highway][lit=yes]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'base/line.png',
 			iconStyle: 'background-color:#229954',
@@ -286,7 +286,7 @@ var config = {
 		},
 		{
 			group: 'Light',
-			title: 'Llum no',
+			title: 'Enllumenat no',
 			query: '(way[highway][lit=no]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'base/line.png',
 			iconStyle: 'background-color:#000000',
@@ -307,7 +307,7 @@ var config = {
 		},
 		{
 			group: 'Light',
-			title: 'Llum (sense dades)',
+			title: 'Sense dades',
 			query: '(way[highway][!lit]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'base/line.png',
 			iconStyle: 'background-color:#FF0000',

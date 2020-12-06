@@ -340,14 +340,14 @@ $(function () {
 	}));
 	
 		// Info Control
-	var infoControlBuild = function () {
+	var infoControlBuild2 = function () {
 		var container = $('<div>').addClass('ol-control ol-unselectable osmcat-infobutton2').html($('<button type="button"><i class="fa fa-search-plus"></i></button>').on('click', function () {
 			window.location.href = 'https://github.com/yopaseopor';
 		}));
 		return container[0];
 	};
 	map.addControl(new ol.control.Control({
-		element: infoControlBuild()
+		element: infoControlBuild2()
 	}));
 
 	// Copy permalink button

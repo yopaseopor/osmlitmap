@@ -268,18 +268,18 @@ var config = {
 			title: 'Yes-Sí',
 			query: '(wr["highway"][lit=yes]({{bbox}});node(w););out meta;',
 			iconSrc: imgSrc + 'base/line.png',
-			iconStyle: 'background-color:#714601',
+			iconStyle: 'background-color:#229954 ',
 			style: function (feature) {
 				var name = feature.get('name') || '';
 				var styles = {
 					'highway': {
 						'primary': new ol.style.Style({
 							stroke: new ol.style.Stroke({
-								color: 'rgba(170, 170, 170, 1.0)',
+								color: 'rgba(34, 153, 84, 0.3)',
 								width: 1
 							}),
 							fill: new ol.style.Fill({
-								color: 'rgba(170, 170, 170, 0.3)'
+								color: 'rgba(34, 153, 84, 0.3)'
 							})
 						})
 					},
@@ -287,11 +287,11 @@ var config = {
 						'primary_link': new ol.style.Style({
 							zIndex: 100,
 							stroke: new ol.style.Stroke({
-								color: 'rgba(246, 99, 79, 1.0)',
+								color: 'rgba(34, 153, 84, 0.3)',
 								width: 1
 							}),
 							fill: new ol.style.Fill({
-								color: 'rgba(246, 99, 79, 0.3)'
+								color: 'rgba(34, 153, 84, 0.3)'
 							}),
 							text: new ol.style.Text({
 								text: name
@@ -301,7 +301,7 @@ var config = {
 					'highway': {
 						'residential': new ol.style.Style({
 							stroke: new ol.style.Stroke({
-								color: 'rgba(255, 255, 255, 1.0)',
+								color: 'rgba(34, 153, 84, 0.3)',
 								width: 8
 							}),
 							text: new ol.style.Text({
@@ -311,7 +311,7 @@ var config = {
 						}),
 						'living_street': new ol.style.Style({
 							stroke: new ol.style.Stroke({
-								color: 'rgba(255, 255, 255, 1.0)',
+								color: 'rgba(34, 153, 84, 0.3)',
 								width: 8
 							}),
 							text: new ol.style.Text({
@@ -321,7 +321,7 @@ var config = {
 						}),
 						'pedestrian': new ol.style.Style({
 							stroke: new ol.style.Stroke({
-								color: 'rgba(255, 255, 255, 1.0)',
+								color: 'rgba(34, 153, 84, 0.3)',
 								width: 8
 							}),
 							text: new ol.style.Text({
@@ -331,7 +331,7 @@ var config = {
 						}),
 						'.*': new ol.style.Style({
 							stroke: new ol.style.Stroke({
-								color: 'rgba(255, 255, 255, 1.0)',
+								color: 'rgba(34, 153, 84, 0.3)',
 								width: 8
 							}),
 							text: new ol.style.Text({

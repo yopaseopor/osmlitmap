@@ -4,7 +4,7 @@ Aprofitant la base de dades d'Openstreetmap es combinen dos programaris.
 
 # 0-La Base de dades: Openstreetmap
 OSM (Openstreetmap) no és un mapa, és una base de dades de punts i línies geolocalitzats, que entre d'altres coses es pot aprofitar per fer mapes (renderitzacions). Però també es poden aprofitar les dades (en aquest cas, d'enllumenat) .Tot plegat es fa amb claus, valors i relacions en aquests punts i línies.
-En aquest cas ens fixem en les claus
+En aquest cas ens fixem en les claus:
 
 * lit (enllumenat)
 * lit:perceived (percepció d'il·luminació)
@@ -26,10 +26,10 @@ Directament es pot modificar la página editant els arxius corresponents:
 
 # 2-Mapcomplete
 
-Utilitzem un repte personalitzat de [Mapcomplete](https://github.com/pietervdvn/MapComplete) per tal d'aportar les dades que faltin, fer en idioma "natural" (no de la màquina ni d'Openstreetmap) i poder-ho fer des de qualsevol dispositiu amb l'únic requisit de registrar-se com a usuari/a d'OpenStreetMap.
+Utilitzem un repte personalitzat de [Mapcomplete](https://github.com/pietervdvn/MapComplete) per tal d'aportar les dades que faltin, fer en idioma "natural" (no de la màquina ni d'Openstreetmap) i poder-ho fer des de qualsevol dispositiu amb l'únic requisit de [registrar-se com a usuari/a d'OpenStreetMap](https://www.openstreetmap.org/login).
 
 # [Exemple](http://yopaseopor.github.io/osmlitmap)
 
 # Agraïments
-A la Comunitat Catalana de Telegram per estar a l'aguaït d'iniciatives solidàries com les del Grup de Dones de Llefià, Geochicas o Urbanisme Feminista
+A la [Comunitat Catalana d'Openstreetmap](https://t.me/osmcat) per estar a l'aguaït d'iniciatives solidàries com les del [Grup de Dones de Llefià](https://twitter.com/grupdonesllefia), [Geochicas](https://twitter.com/geochicasosm) o [Urbanisme Feminista](https://twitter.com/9urbfeminista)
 

@@ -287,7 +287,7 @@ var config = {
 		{
 			group: 'Light',
 			title: 'Llum sí',
-			query: '(way[lit=yes][highway=footway][footway=sidewalk]({{bbox}});node(w););out;',
+			query: '(way[highway][lit=yes]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'base/line.png',
 			iconStyle: 'background-color:#229954',
 			style: function () {
@@ -308,7 +308,7 @@ var config = {
 		{
 			group: 'Light',
 			title: 'Llum no',
-			query: '(way[lit=no][highway=footway][footway=sidewalk]({{bbox}});node(w););out;',
+			query: '(way[highway][lit=no]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'base/line.png',
 			iconStyle: 'background-color:#000000',
 			style: function () {
@@ -329,7 +329,7 @@ var config = {
 		{
 			group: 'Light',
 			title: 'Llum (sense dades)',
-			query: '(way[!lit][highway=footway][footway=sidewalk]({{bbox}});node(w););out;',
+			query: '(way[highway][!lit]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'base/line.png',
 			iconStyle: 'background-color:#FF0000',
 			style: function () {

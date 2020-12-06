@@ -189,7 +189,7 @@ var config = {
 			query: '(node["lit:perceived"="none"]({{bbox}}););out meta;',
 			iconSrc: imgSrc + 'icones_llum/lit_osm_none.svg',
 			iconStyle: 'background-color:#FFFFFF',
-						scale: 0.25,
+						scale: 1,
 			style: function () {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
@@ -205,7 +205,7 @@ var config = {
 			query: '(node["lit:perceived"="minimal"]({{bbox}}););out meta;',
 			iconSrc: imgSrc + 'icones_llum/lit_osm_minimal.svg',
 			iconStyle: 'background-color:#FFFFFF',
-						scale: 0.25,
+						scale: 1,
 			style: function () {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
@@ -221,7 +221,7 @@ var config = {
 			query: '(node["lit:perceived"="poor"]({{bbox}}););out meta;',
 			iconSrc: imgSrc + 'icones_llum/lit_osm_poor.svg',
 			iconStyle: 'background-color:#FFFFFF',
-						scale: 0.25,
+						scale: 1,
 			style: function () {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
@@ -237,7 +237,7 @@ var config = {
 			query: '(node["lit:perceived"="good"]({{bbox}}););out meta;',
 			iconSrc: imgSrc + 'icones_llum/lit_osm_good.svg',
 			iconStyle: 'background-color:#FFFFFF',
-						scale: 0.25,
+						scale: 1,
 			style: function () {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
@@ -253,7 +253,7 @@ var config = {
 			query: '(node["lit:perceived"="daylike"]({{bbox}}););out meta;',
 			iconSrc: imgSrc + 'icones_llum/lit_osm_daylike.svg',
 			iconStyle: 'background-color:#FFFFFF',
-						scale: 0.25,
+						scale: 1,
 			style: function () {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({

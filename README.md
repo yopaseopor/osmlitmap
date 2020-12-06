@@ -1,48 +1,35 @@
-# accessibilitat
-help to accessibility maps
+# Motiu
+OSM Lit Map neix després de veure dues convocatòries per part de grups socials destinades a informar sobre punts foscos i perillosos.
+Aprofitant la base de dades d'Openstreetmap es combinen dos programaris.
 
-Accessibilitat és una prova de concepte sobre el mapa personalitzable a OpenStreetMap. Consta de vàries parts:
+# 0-La Base de dades: Openstreetmap
+OSM (Openstreetmap) no és un mapa, és una base de dades de punts i línies geolocalitzats, que entre d'altres coses es pot aprofitar per fer mapes (renderitzacions). Però també es poden aprofitar les dades (en aquest cas, d'enllumenat) .Tot plegat es fa amb claus, valors i relacions en aquests punts i línies.
+En aquest cas ens fixem en les claus
 
-# Introducció de dades
-## Preset, predefinició pel programa Josm
-## Deriviste
+* lit (enllumenat)
+* lit:perceived (percepció d'il·luminació)
 
-# Renderització de dades
-## Estil
-## [Mapa](http://yopaseopor.github.io/accessibilitat/map)
-
+# 1-Mapa
 Mapa basat en [Bicycle tags map](https://wiki.openstreetmap.org/wiki/Bicycle_tags_map)
 
 Amb modificacions de [Ramiro Balado](https://github.com/Qjammer)
 
+Versió nova Openlayers feta per [Ripollx](https://github.com/Ripollx)
+
 El mapa ens permet la mostra d'elements determinats personalitzables tenint com a fons varis mapes diferents.
-Per poder-ho fer hem de seguir les instruccions que trobarem en aquests arxius (poden estar en anglès) cercant la cadena "MODIFICAR"
 
-### index.html
+Directament es pot modificar la página editant els arxius corresponents:
 
-* Modificar títol
-* Latitud, longitud i zoom d'inici
-* Modificar layers i atribucions
-* Possibilitat de modificar pestanyes
+*    index.html conté l'esquelet de la página.
+*    index.js conté l'orquestador per utilitzar OpenLayers (només es requereix modificar per afegir noves funcionalitats).
+*    config.js conté la definició de les capes, idioma i característiques que es volen mostrar.
 
-### js_source/noordpass.js 
+# 2-Mapcomplete
 
-* Missatges error
-* Nivell de zoom per veure dades (allau de dades=petició incorrecta)
-* Estils opcions (cos de lletra, etc.)
+Utilitzem un repte personalitzat de [Mapcomplete](https://github.com/pietervdvn/MapComplete) per tal d'aportar les dades que faltin, fer en idioma "natural" (no de la màquina ni d'Openstreetmap) i poder-ho fer des de qualsevol dispositiu amb l'únic requisit de registrar-se com a usuari/a d'OpenStreetMap.
 
-### js_source/localtracks.js
+# [Exemple](http://yopaseopor.github.io/osmlitmap)
 
-* Mida GPX
-* Interfície càrrega GPX
+# Agraïments
+A la Comunitat Catalana de Telegram per estar a l'aguaït d'iniciatives solidàries com les del Grup de Dones de Llefià, Geochicas o Urbanisme Feminista
 
-### js_source/layerdef.js
-
-* replicar i modificar functions
-* crear noves pestanyes (type=test)
-* crear noves opcions
-* Enllaços en l'emergent que surt en fer clic sobre un punt
-
-# Informació i estadística
-## Taginfo (estadístiques)
-## Wiki a OSM sobre com fer-ho

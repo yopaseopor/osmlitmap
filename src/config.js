@@ -265,97 +265,6 @@ var config = {
 		},
 		{
 			group: 'Light',
-			title: 'Yes-Sí',
-			query: '(wr["highway"][lit=yes]({{bbox}});node(w););out meta;',
-			iconSrc: imgSrc + 'base/line.png',
-			iconStyle: 'background-color:#229954 ',
-			style: function (feature) {
-				var name = feature.get('name') || '';
-				var styles = {
-					'highway': {
-						'primary': new ol.style.Style({
-							stroke: new ol.style.Stroke({
-								color: 'rgba(34, 153, 84, 0.3)',
-								width: 1
-							}),
-							fill: new ol.style.Fill({
-								color: 'rgba(34, 153, 84, 0.3)'
-							})
-						})
-					},
-					'highway': {
-						'primary_link': new ol.style.Style({
-							zIndex: 100,
-							stroke: new ol.style.Stroke({
-								color: 'rgba(34, 153, 84, 0.3)',
-								width: 1
-							}),
-							fill: new ol.style.Fill({
-								color: 'rgba(34, 153, 84, 0.3)'
-							}),
-							text: new ol.style.Text({
-								text: name
-							})
-						})
-					},
-					'highway': {
-						'residential': new ol.style.Style({
-							stroke: new ol.style.Stroke({
-								color: 'rgba(34, 153, 84, 0.3)',
-								width: 8
-							}),
-							text: new ol.style.Text({
-								text: name,
-								placement: 'line'
-							})
-						}),
-						'living_street': new ol.style.Style({
-							stroke: new ol.style.Stroke({
-								color: 'rgba(34, 153, 84, 0.3)',
-								width: 8
-							}),
-							text: new ol.style.Text({
-								text: name,
-								placement: 'line'
-							})
-						}),
-						'pedestrian': new ol.style.Style({
-							stroke: new ol.style.Stroke({
-								color: 'rgba(34, 153, 84, 0.3)',
-								width: 8
-							}),
-							text: new ol.style.Text({
-								text: name,
-								placement: 'line'
-							})
-						}),
-						'.*': new ol.style.Style({
-							stroke: new ol.style.Stroke({
-								color: 'rgba(34, 153, 84, 0.3)',
-								width: 8
-							}),
-							text: new ol.style.Text({
-								text: name,
-								placement: 'line'
-							})
-						})
-					}
-				};
-				for (var key in styles) {
-					var value = feature.get(key);
-					if (value !== undefined) {
-						for (var regexp in styles[key]) {
-							if (new RegExp(regexp).test(value)) {
-								return styles[key][regexp];
-							}
-						}
-					}
-				}
-				return null;
-			} 
-		},
-		{
-			group: 'Light',
 			title: 'Yes (sidewalks)-Sí (voreres-calles)',
 			query: '(way["highway"="footway"][lit=yes]({{bbox}});way(r)({{bbox}});node(w););out skel;',
 			iconSrc: imgSrc + 'base/line.png',
@@ -380,13 +289,13 @@ var config = {
 			title: 'Llum sí',
 			query: '(way[lit=yes][highway=footway][footway=sidewalk]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'base/line.png',
-			iconStyle: 'background-color:green',
+			iconStyle: 'background-color:#229954',
 			style: function () {
 				var fill = new ol.style.Fill({
-					color: 'rgba(255,165,0,0.4)'
+					color: 'rgba(34,153,84,0.4)'
 				});
 				var stroke = new ol.style.Stroke({
-					color: 'green',
+					color: 'rgba(34,153,84,0.4)',
 					width: 5
 				});
 				var style = new ol.style.Style({
@@ -404,10 +313,10 @@ var config = {
 			iconStyle: 'background-color:#000000',
 			style: function () {
 				var fill = new ol.style.Fill({
-					color: 'rgba(255,51,51,0.4)'
+					color: 'rgba(0,0,0,0.4)'
 				});
 				var stroke = new ol.style.Stroke({
-					color: '#000000',
+					color: 'rgba(0,0,0,0.4)',
 					width: 5
 				});
 				var style = new ol.style.Style({
@@ -425,10 +334,10 @@ var config = {
 			iconStyle: 'background-color:#FF0000',
 			style: function () {
 				var fill = new ol.style.Fill({
-					color: 'rgba(0,0,0,0.1)'
+					color: 'rgba(255,51,51,0.4)'
 				});
 				var stroke = new ol.style.Stroke({
-					color: 'rgba(0,0,0,0.4)',
+					color: 'rgba(255,51,51,0.4)',
 					width: 5
 				});
 				var style = new ol.style.Style({

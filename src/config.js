@@ -264,7 +264,7 @@ var config = {
 			}
 		},
 		{
-			group: 'Light',
+			group: 'Enllumenat',
 			title: 'Enllumenat sí',
 			query: '(way[highway][lit=yes]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'base/line.png',
@@ -285,7 +285,7 @@ var config = {
 			}
 		},
 		{
-			group: 'Light',
+			group: 'Enllumenat',
 			title: 'Enllumenat no',
 			query: '(way[highway][lit=no]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'base/line.png',
@@ -306,7 +306,7 @@ var config = {
 			}
 		},
 		{
-			group: 'Light',
+			group: 'Enllumenat',
 			title: 'Sense dades',
 			query: '(way[highway][!lit]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'base/line.png',

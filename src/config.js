@@ -358,7 +358,7 @@ var config = {
 					color: 'rgba(255,165,0,0.4)'
 				});
 				var stroke = new ol.style.Stroke({
-					color: '#green',
+					color: 'green',
 					width: 5
 				});
 				var style = new ol.style.Style({

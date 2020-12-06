@@ -266,7 +266,7 @@ var config = {
 		{
 			group: 'Light',
 			title: 'Yes (sidewalks)-Sí (voreres-calles)',
-			query: '(way["highway"="footway"][lit=yes]({{bbox}});way(r)({{bbox}});node(w););out skel;',
+			query: '(way[highway][lit=yes]({{bbox}});way(r)({{bbox}});node(w););out skel;',
 			iconSrc: imgSrc + 'base/line.png',
 			iconStyle: 'background-color:#40E0D0',
 			style: function () {

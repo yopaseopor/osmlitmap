@@ -186,7 +186,7 @@ var config = {
 		{
 			group: 'Lit-Iluminación-Il·luminació',
 			title: 'Lit:perceived=none',
-			query: '(node[lit:perceived=none]({{bbox}}););out meta;',
+			query: '(node["lit:perceived"="none"]({{bbox}}););out meta;',
 			iconSrc: imgSrc + 'icones_llum/lit_osm_none.svg',
 			iconStyle: 'background-color:#714601',
 						scale: 0.25,

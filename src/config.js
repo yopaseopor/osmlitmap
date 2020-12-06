@@ -265,8 +265,29 @@ var config = {
 		},
 		{
 			group: 'Light',
-			title: 'Yes-Sí',
-			query: '(nwr["highway"~"residential|living_street|pedestrian|tertiary|service|unclassified|secondary|primary|trunk|motorway|tertiary_link|secondary_link|primary_link|trunk_link|motorway_link|footway"][lit=yes]({{bbox}});way(r)({{bbox}});node(w););out skel;',
+			title: 'Yes (way)-Sí (vies)',
+			query: '(way["highway"~"residential|living_street|pedestrian|tertiary|service|unclassified|secondary|primary|trunk|motorway|tertiary_link|secondary_link|primary_link|trunk_link|motorway_link"][lit=yes]({{bbox}});way(r)({{bbox}});node(w););out skel;',
+			iconSrc: imgSrc + 'base/line.png',
+			iconStyle: 'background-color:#40E0D0',
+			style: function () {
+				var fill = new ol.style.Fill({
+					color: 'rgba(64,224,208,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: '#40E0D0',
+					width: 5
+				});
+				var style = new ol.style.Style({
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+		},
+		{
+			group: 'Light',
+			title: 'Yes (sidewalks)-Sí (voreres-calles)',
+			query: '(way["highway"="footway"][lit=yes]({{bbox}});way(r)({{bbox}});node(w););out skel;',
 			iconSrc: imgSrc + 'base/line.png',
 			iconStyle: 'background-color:#40E0D0',
 			style: function () {

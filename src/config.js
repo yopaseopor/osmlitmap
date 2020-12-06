@@ -348,17 +348,17 @@ var config = {
 			}
 		},
 		{
-			group: 'Voreres',
-			title: 'Vorera amb limitacions',
-			query: '(way[wheelchair=limited][highway=footway][footway=sidewalk]({{bbox}});node(w););out;',
+			group: 'Light',
+			title: 'Llum sí',
+			query: '(way[lit=yes][highway=footway][footway=sidewalk]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'base/line.png',
-			iconStyle: 'background-color:#FFA500',
+			iconStyle: 'background-color:green',
 			style: function () {
 				var fill = new ol.style.Fill({
 					color: 'rgba(255,165,0,0.4)'
 				});
 				var stroke = new ol.style.Stroke({
-					color: '#FFA500',
+					color: '#green',
 					width: 5
 				});
 				var style = new ol.style.Style({
@@ -369,9 +369,9 @@ var config = {
 			}
 		},
 		{
-			group: 'Voreres',
-			title: 'Vorera no adaptada',
-			query: '(way[wheelchair=no][highway=footway][footway=sidewalk]({{bbox}});node(w););out;',
+			group: 'Light',
+			title: 'Llum no',
+			query: '(way[lit=no][highway=footway][footway=sidewalk]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'base/line.png',
 			iconStyle: 'background-color:#FF0000',
 			style: function () {
@@ -380,6 +380,27 @@ var config = {
 				});
 				var stroke = new ol.style.Stroke({
 					color: '#FF0000',
+					width: 5
+				});
+				var style = new ol.style.Style({
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+		},
+		{
+			group: 'Light',
+			title: 'Llum (sense dades)',
+			query: '(way[!lit][highway=footway][footway=sidewalk]({{bbox}});node(w););out;',
+			iconSrc: imgSrc + 'base/line.png',
+			iconStyle: 'background-color:#000000',
+			style: function () {
+				var fill = new ol.style.Fill({
+					color: 'rgba(0,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: '#000000',
 					width: 5
 				});
 				var style = new ol.style.Style({

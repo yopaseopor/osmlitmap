@@ -188,7 +188,7 @@ var config = {
 			title: 'Lit:perceived=none',
 			query: '(node["lit:perceived"="none"]({{bbox}}););out meta;',
 			iconSrc: imgSrc + 'icones_llum/lit_osm_none.svg',
-			iconStyle: 'background-color:#714601',
+			iconStyle: 'background-color:#FFFFFF',
 						scale: 0.25,
 			style: function () {
 				var style = new ol.style.Style({
@@ -201,15 +201,15 @@ var config = {
 		},
 		{
 			group: 'Lit-Iluminación-Il·luminació',
-			title: 'Wheelchair=limited',
-			query: '(node[wheelchair=limited][shop]({{bbox}});node[wheelchair=limited][amenity]({{bbox}});node[wheelchair=limited][office]({{bbox}}););out meta;',
-			iconSrc: imgSrc + 'accessibilitat/wheelchair_limited_shop.svg',
-			iconStyle: 'background-color:#714601',
-			scale: 0.0004,
+			title: 'Lit:perceived=minimal',
+			query: '(node["lit:perceived"="minimal"]({{bbox}}););out meta;',
+			iconSrc: imgSrc + 'icones_llum/lit_osm_minimal.svg',
+			iconStyle: 'background-color:#FFFFFF',
+						scale: 0.25,
 			style: function () {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
-						src: imgSrc + 'accessibilitat/wheelchair_limited_shop.svg'
+						src: imgSrc + 'icones_llum/lit_osm_minimal.svg'
 					})
 				});
 				return style;
@@ -217,15 +217,15 @@ var config = {
 		},
 		{
 			group: 'Lit-Iluminación-Il·luminació',
-			title: 'lit:perceived=none',
-			query: '(node[wheelchair=no][shop]({{bbox}});node[wheelchair=no][amenity]({{bbox}});node[wheelchair=no][office]({{bbox}}););out meta;',
-			iconSrc: imgSrc + 'accessibilitat/wheelchair_no_shop.svg',
-			iconStyle: 'background-color:#714601',
-			scale: 0.0004,
+			title: 'Lit:perceived=poor',
+			query: '(node["lit:perceived"="poor"]({{bbox}}););out meta;',
+			iconSrc: imgSrc + 'icones_llum/lit_osm_poor.svg',
+			iconStyle: 'background-color:#FFFFFF',
+						scale: 0.25,
 			style: function () {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
-						src: imgSrc + 'accessibilitat/wheelchair_no_shop.svg'
+						src: imgSrc + 'icones_llum/lit_osm_poor.svg'
 					})
 				});
 				return style;
@@ -233,15 +233,31 @@ var config = {
 		},
 		{
 			group: 'Lit-Iluminación-Il·luminació',
-			title: 'Falta Wheelchair',
-			query: '(node[!wheelchair][shop]({{bbox}});node[!wheelchair][amenity]({{bbox}});node[!wheelchair][office]({{bbox}}););out meta;',
-			iconSrc: imgSrc + 'accessibilitat/wheelchair_unknown.svg',
-			iconStyle: 'background-color:#714601',
-			scale: 0.25,
+			title: 'Lit:perceived=good',
+			query: '(node["lit:perceived"="good"]({{bbox}}););out meta;',
+			iconSrc: imgSrc + 'icones_llum/lit_osm_good.svg',
+			iconStyle: 'background-color:#FFFFFF',
+						scale: 0.25,
 			style: function () {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
-						src: imgSrc + 'accessibilitat/wheelchair_unknown.svg'
+						src: imgSrc + 'icones_llum/lit_osm_good.svg'
+					})
+				});
+				return style;
+			}
+		},
+		{
+			group: 'Lit-Iluminación-Il·luminació',
+			title: 'Lit:perceived=daylike',
+			query: '(node["lit:perceived"="daylike"]({{bbox}}););out meta;',
+			iconSrc: imgSrc + 'icones_llum/lit_osm_daylike.svg',
+			iconStyle: 'background-color:#FFFFFF',
+						scale: 0.25,
+			style: function () {
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+						src: imgSrc + 'icones_llum/lit_osm_daylike.svg'
 					})
 				});
 				return style;

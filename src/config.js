@@ -296,7 +296,9 @@ var config = {
 				});
 				var stroke = new ol.style.Stroke({
 					color: 'rgba(57,128,78,0.4)',
-					width: 5
+					width: 5,
+					lineDash: [4,8],
+					lineDashOffset: 6
 				});
 				var style = new ol.style.Style({
 					fill: fill,

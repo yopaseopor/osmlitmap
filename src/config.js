@@ -264,6 +264,111 @@ var config = {
 			}
 		},
 		{
+			group: 'Percep',
+			title: 'No hi ha llum (via)',
+			query: '(way[highway][lit:perceived=none]({{bbox}});node(w););out;',
+			iconSrc: imgSrc + 'base/dots.png',
+			iconStyle: 'background-color:#000000',
+			style: function () {
+				var fill = new ol.style.Fill({
+					color: 'rgba(0,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(0,0,0,0.4)',
+					width: 5
+				});
+				var style = new ol.style.Style({
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+		},
+		{
+			group: 'Percep',
+			title: 'Llum mínima (via)',
+			query: '(way[highway][lit:perceived=minimal]({{bbox}});node(w););out;',
+			iconSrc: imgSrc + 'base/tdot.png',
+			iconStyle: 'background-color:#39804e',
+			style: function () {
+				var fill = new ol.style.Fill({
+					color: 'rgba(57,75,62,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(57,75,62,0.4)',
+					width: 5
+				});
+				var style = new ol.style.Style({
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+		},
+		{
+			group: 'Percep',
+			title: 'Llum pobra (via)',
+			query: '(way[highway][lit:perceived=poor]({{bbox}});node(w););out;',
+			iconSrc: imgSrc + 'base/tdot2.png',
+			iconStyle: 'background-color:#394b3e',
+			style: function () {
+				var fill = new ol.style.Fill({
+					color: 'rgba(57,128,78,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(57,128,78,0.4)',
+					width: 5
+				});
+				var style = new ol.style.Style({
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+		},
+		{
+			group: 'Percep',
+			title: 'Llum bona (via)',
+			query: '(way[highway][lit:perceived=good]({{bbox}});node(w););out;',
+			iconSrc: imgSrc + 'base/lineline.png',
+			iconStyle: 'background-color:#2bc95b',
+			style: function () {
+				var fill = new ol.style.Fill({
+					color: 'rgba(43,201,91,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(43,201,91,0.4)',
+					width: 5
+				});
+				var style = new ol.style.Style({
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+		},
+		{
+			group: 'Percep',
+			title: 'Com si fos de dia (via)',
+			query: '(way[highway][lit:perceived=daylike]({{bbox}});node(w););out;',
+			iconSrc: imgSrc + 'base/line.png',
+			iconStyle: 'background-color:#00ff4d',
+			style: function () {
+				var fill = new ol.style.Fill({
+					color: 'rgba(0,255,77,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(0,255,77,0.4)',
+					width: 5
+				});
+				var style = new ol.style.Style({
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+		},
+		{
 			group: 'Enllumenat',
 			title: 'Enllumenat sí',
 			query: '(way[highway][lit=yes]({{bbox}});node(w););out;',

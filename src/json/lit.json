@@ -327,7 +327,8 @@
       "presets": [
         {
           "tags": [
-            "lit:perceived=none"
+            "lit:perceived=none",
+            "highway=street_lamp"
           ],
           "title": {
             "en": "Perceived lit: None",
@@ -342,7 +343,8 @@
         },
         {
           "tags": [
-            "lit:perceived=minimal"
+            "lit:perceived=minimal",
+            "highway=street_lamp"
           ],
           "title": {
             "en": "Perceived lit: Minimal",
@@ -357,7 +359,8 @@
         },
         {
           "tags": [
-            "lit:perceived=poor"
+            "lit:perceived=poor",
+            "highway=street_lamp"
           ],
           "title": {
             "en": "Perceived lit: Poor",
@@ -372,7 +375,8 @@
         },
         {
           "tags": [
-            "lit:perceived=good"
+            "lit:perceived=good",
+            "highway=street_lamp"
           ],
           "title": {
             "en": "Perceived lit: Good",
@@ -387,7 +391,8 @@
         },
         {
           "tags": [
-            "lit:perceived=daylike"
+            "lit:perceived=daylike",
+            "highway=street_lamp"
           ],
           "title": {
             "en": "Perceived lit: Daylike",

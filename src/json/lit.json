@@ -1,0 +1,407 @@
+{
+  "id": "lit",
+  "title": {
+    "en": "Lit",
+    "ca": "Il·luminació",
+    "es": "Iluminación"
+  },
+  "shortDescription": {
+    "en": "Cover lit info",
+    "ca": "Cobreix informació sobre il·luminació",
+    "es": "Cubre información sobre iluminación"
+  },
+  "description": {
+    "en": "Add lit information and also lit:perceived",
+    "ca": "Afegeix informació sobre il·luminació i percepció de la il·luminació",
+    "es": "Añade información sobre iluminación y percepción de la misma"
+  },
+  "language": [
+    "en",
+    "ca",
+    "es"
+  ],
+  "maintainer": "",
+  "icon": "https://github.com/yopaseopor/osmlitmap/raw/master/src/img/icones_llum/lit_osm.svg",
+  "version": "0",
+  "startLat": 0,
+  "startLon": 0,
+  "startZoom": 1,
+  "widenFactor": 0.01,
+  "socialImage": "",
+  "layers": [
+    {
+      "id": "lits",
+      "name": {
+        "en": "Cover lits info",
+        "ca": "Cobreix informació sobre il·luminació",
+        "es": "Cubre información sobre iluminación"
+      },
+      "minzoom": 18,
+      "overpassTags": {
+        "or": [
+          "highway=residential",
+          "highway=living_street",
+          "highway=pedestrian",
+          "highway=tertiary",
+          "highway=service",
+          "highway=unclassified",
+          "highway=secondary",
+          "highway=primary",
+          "highway=trunk",
+          "highway=motorway",
+          "highway=tertiary_link",
+          "highway=secondary_link",
+          "highway=primary_link",
+          "highway=trunk_link",
+          "highway=motorway_link",
+          "highway=footway",
+          {
+            "and": [
+              "lit:perceived~*"
+            ]
+          }
+        ]
+      },
+      "title": {
+        "render": {
+          "en": "{name}",
+          "ca": "{name}",
+          "es": "{name}"
+        },
+        "mappings": [
+          {
+            "if": {
+              "and": [
+                "lit:perceived~*"
+              ]
+            },
+            "then": {
+              "en": "Point",
+              "ca": "Punt",
+              "es": "Punto"
+            }
+          }
+        ]
+      },
+      "description": {
+        "en": "Complete your light info in the street",
+        "ca": "Completa la informació sobre il·luminació del carrer",
+        "es": "Completa la información sobre iluminación de la calle"
+      },
+      "tagRenderings": [
+        {
+          "freeform": {
+            "key": "lit"
+          },
+          "render": {
+            "en": "{lit}",
+            "ca": "{lit}",
+            "es": "{lit}"
+          },
+          "question": {
+            "en": "Has lit this way?",
+            "ca": "Està il·luminada aquesta via?",
+            "es": "¿Está iluminada esta vía?"
+          },
+          "mappings": [
+            {
+              "if": {
+                "and": [
+                  "lit=yes"
+                ]
+              },
+              "then": {
+                "en": "There's lit",
+                "ca": "Hi ha llum",
+                "es": "Hay luz"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "lit=no"
+                ]
+              },
+              "then": {
+                "en": "There is no lit",
+                "ca": "No hi ha llum",
+                "es": "No hay luz"
+              }
+            }
+          ]
+        },
+        {
+          "render": {
+            "en": "{lit:perceived}",
+            "ca": "{lit:perceived}",
+            "es": "{lit:perceived}"
+          },
+          "question": {
+            "en": "How do you perceive the light?",
+            "ca": "Com descriuries la llum d'aquest lloc?",
+            "es": "¿Como describirías la iluminación de este lugar?"
+          },
+          "mappings": [
+            {
+              "if": {
+                "and": [
+                  "lit:perceived=none"
+                ]
+              },
+              "then": {
+                "en": "Perception:There is not light",
+                "ca": "Percepció:No hi ha llum",
+                "es": "Percepción:No hay luz"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "lit:perceived=minimal"
+                ]
+              },
+              "then": {
+                "en": "Perception:Minimal",
+                "ca": "Percepció:Obscur, mínima",
+                "es": "Percepción:Oscuro, mínima"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "lit:perceived=poor"
+                ]
+              },
+              "then": {
+                "en": "Perception:Poor",
+                "ca": "Percepció:Pobre",
+                "es": "Percepción:Pobre"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "lit:perceived=good"
+                ]
+              },
+              "then": {
+                "en": "Perception:Good",
+                "ca": "Percepció:Bona",
+                "es": "Percepción:Buena"
+              }
+            },
+            {
+              "if": {
+                "and": [
+                  "lit:perceived=daylike"
+                ]
+              },
+              "then": {
+                "en": "Perception:Daylike",
+                "ca": "Percepció:Sembla de dia",
+                "es": "Percepción:Parece que sea de día"
+              }
+            }
+          ],
+          "freeform": {
+            "key": "lit:perceived"
+          }
+        }
+      ],
+      "hideUnderlayingFeaturesMinPercentage": 0,
+      "icon": {
+        "render": "https://github.com/yopaseopor/osmlitmap/raw/master/src/img/icones_llum/lit_osm.svg",
+        "mappings": [
+          {
+            "if": {
+              "and": [
+                "lit:perceived=none"
+              ]
+            },
+            "then": {
+              "en": "https://github.com/yopaseopor/osmlitmap/raw/master/src/img/icones_llum/lit_osm_none.svg",
+              "ca": "https://github.com/yopaseopor/osmlitmap/raw/master/src/img/icones_llum/lit_osm_none.svg",
+              "es": "https://github.com/yopaseopor/osmlitmap/raw/master/src/img/icones_llum/lit_osm_none.svg"
+            }
+          },
+          {
+            "if": {
+              "and": [
+                "lit:perceived=minimal"
+              ]
+            },
+            "then": {
+              "en": "https://github.com/yopaseopor/osmlitmap/raw/master/src/img/icones_llum/lit_osm_minimal.svg",
+              "ca": "https://github.com/yopaseopor/osmlitmap/raw/master/src/img/icones_llum/lit_osm_minimal.svg",
+              "es": "https://github.com/yopaseopor/osmlitmap/raw/master/src/img/icones_llum/lit_osm_minimal.svg"
+            }
+          },
+          {
+            "if": {
+              "and": [
+                "lit:perceived=poor"
+              ]
+            },
+            "then": {
+              "en": "https://github.com/yopaseopor/osmlitmap/raw/master/src/img/icones_llum/lit_osm_poor.svg",
+              "ca": "https://github.com/yopaseopor/osmlitmap/raw/master/src/img/icones_llum/lit_osm_poor.svg",
+              "es": "https://github.com/yopaseopor/osmlitmap/raw/master/src/img/icones_llum/lit_osm_poor.svg"
+            }
+          },
+          {
+            "if": {
+              "and": [
+                "lit:perceived=good"
+              ]
+            },
+            "then": {
+              "en": "https://github.com/yopaseopor/osmlitmap/raw/master/src/img/icones_llum/lit_osm_good.svg",
+              "ca": "https://github.com/yopaseopor/osmlitmap/raw/master/src/img/icones_llum/lit_osm_good.svg",
+              "es": "https://github.com/yopaseopor/osmlitmap/raw/master/src/img/icones_llum/lit_osm_good.svg"
+            }
+          },
+          {
+            "if": {
+              "and": [
+                "lit:perceived=daylike"
+              ]
+            },
+            "then": {
+              "en": "https://github.com/yopaseopor/osmlitmap/raw/master/src/img/icones_llum/lit_osm_daylike.svg",
+              "ca": "https://github.com/yopaseopor/osmlitmap/raw/master/src/img/icones_llum/lit_osm_daylike.svg",
+              "es": "https://github.com/yopaseopor/osmlitmap/raw/master/src/img/icones_llum/lit_osm_daylike.svg"
+            }
+          }
+        ]
+      },
+      "width": {
+        "render": "4"
+      },
+      "iconSize": {
+        "render": "60,60,center",
+        "mappings": []
+      },
+      "color": {
+        "mappings": [
+          {
+            "if": {
+              "and": [
+                "lit=yes"
+              ]
+            },
+            "then": {
+              "en": "green",
+              "ca": "green",
+              "es": "green"
+            }
+          },
+          {
+            "if": {
+              "and": [
+                "lit=no"
+              ]
+            },
+            "then": {
+              "en": "black",
+              "ca": "black",
+              "es": "black"
+            }
+          },
+          {
+            "if": {
+              "and": [
+                "lit!~"
+              ]
+            },
+            "then": {
+              "en": "red",
+              "ca": "red",
+              "es": "red"
+            }
+          }
+        ],
+        "condition": {
+          "and": []
+        }
+      },
+      "presets": [
+        {
+          "tags": [
+            "lit:perceived=none"
+          ],
+          "title": {
+            "en": "Perceived lit: None",
+            "ca": "Percepció: Cap",
+            "es": "Percepción: Ninguna"
+          },
+          "description": {
+            "en": "There is no lit to perceive",
+            "ca": "No hi ha llum a percebre",
+            "es": "No hay luz a percibir"
+          }
+        },
+        {
+          "tags": [
+            "lit:perceived=minimal"
+          ],
+          "title": {
+            "en": "Perceived lit: Minimal",
+            "ca": "Percepció: Mínima",
+            "es": "Percepción: Mínima"
+          },
+          "description": {
+            "en": "There is minimal perception of lit",
+            "ca": "Mínima: massa fosc",
+            "es": "Mínima: muy oscuro"
+          }
+        },
+        {
+          "tags": [
+            "lit:perceived=poor"
+          ],
+          "title": {
+            "en": "Perceived lit: Poor",
+            "ca": "Percepció: Pobre",
+            "es": "Percepción: Pobre"
+          },
+          "description": {
+            "en": "There is a poor perception of the lit",
+            "ca": "Pobre: no es distingeixen les cares",
+            "es": "Pobre: No se distinguen las caras"
+          }
+        },
+        {
+          "tags": [
+            "lit:perceived=good"
+          ],
+          "title": {
+            "en": "Perceived lit: Good",
+            "ca": "Percepció: Bona",
+            "es": "Percepción: Buena"
+          },
+          "description": {
+            "en": "There is a good perception of lit",
+            "ca": "Bona il·luminació, suficient",
+            "es": "Buena iluminación, suficiente"
+          }
+        },
+        {
+          "tags": [
+            "lit:perceived=daylike"
+          ],
+          "title": {
+            "en": "Perceived lit: Daylike",
+            "ca": "Percepció: Sembla de dia",
+            "es": "Percepción: Parece de día"
+          },
+          "description": {
+            "en": "There is daylike perception of the lit",
+            "ca": "Sembla de dia, óptima",
+            "es": "Parece de día, óptima"
+          }
+        }
+      ]
+    }
+  ],
+  "roamingRenderings": []
+}

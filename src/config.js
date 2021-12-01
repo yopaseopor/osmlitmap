@@ -265,7 +265,7 @@ var config = {
 		},
 		{
 			group: 'Percep',
-			title: 'No info',
+			title: 'No info <b> Clicar aquí</b>',
 			query: '(node[!"lit:perceived"][highway=street_lamp]({{bbox}}););out meta;',
 			iconSrc: imgSrc + 'icones_llum/lit_osm_question.svg',
 			iconStyle: 'background-color:#FFFFFF',

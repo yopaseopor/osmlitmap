@@ -346,14 +346,14 @@
             "highway=street_lamp"
           ],
           "title": {
-            "en": "Perceived lit: Minimal",
-            "ca": "Percepció: Mínima",
-            "es": "Percepción: Mínima"
+            "en": "Street lamp and its perception: Minimal",
+            "ca": "Fanal i la seva percepció: Mínima",
+            "es": "Farola y su percepción: Mínima"
           },
           "description": {
-            "en": "There is minimal perception of lit",
-            "ca": "Mínima: massa fosc",
-            "es": "Mínima: muy oscuro"
+            "en": "There is a street lamp and its lit perception is minimal",
+            "ca": "Hi ha un fanal i tot i aixó està massa fosc",
+            "es": "Hay una farola y su percepción es mínima: muy oscuro"
           }
         },
         {
@@ -362,14 +362,14 @@
             "highway=street_lamp"
           ],
           "title": {
-            "en": "Perceived lit: Poor",
-            "ca": "Percepció: Pobre",
-            "es": "Percepción: Pobre"
+            "en": "Street lamp and its perception: Poor",
+            "ca": "Fanal i la seva percepció: Pobre",
+            "es": "Farola y su percepción: Pobre"
           },
           "description": {
-            "en": "There is a poor perception of the lit",
-            "ca": "Pobre: no es distingeixen les cares",
-            "es": "Pobre: No se distinguen las caras"
+            "en": "There is a street lamp and its lit perception is poor",
+            "ca": "Hi ha un fanal i la seva il·luminació és pobre: no es distingeixen les cares",
+            "es": "Hay una farola y su percepción es pobre: No se distinguen las caras"
           }
         },
         {
@@ -378,14 +378,14 @@
             "highway=street_lamp"
           ],
           "title": {
-            "en": "Perceived lit: Good",
-            "ca": "Percepció: Bona",
-            "es": "Percepción: Buena"
+            "en": "Street lamp and its perception: Good",
+            "ca": "Fanal i la seva percepció: Bona",
+            "es": "Farola y su percepción: Buena"
           },
           "description": {
-            "en": "There is a good perception of lit",
-            "ca": "Bona il·luminació, suficient",
-            "es": "Buena iluminación, suficiente"
+            "en": "There is a street lamp and its lit perception is good",
+            "ca": "Hi ha un fanal i  hi ha bona il·luminació, suficient",
+            "es": "Hay una farola y se nota buena iluminación, suficiente"
           }
         },
         {
@@ -394,14 +394,14 @@
             "highway=street_lamp"
           ],
           "title": {
-            "en": "Perceived lit: Daylike",
-            "ca": "Percepció: Sembla de dia",
-            "es": "Percepción: Parece de día"
+            "en": "Street lamp and its perception: Daylike",
+            "ca": "Fanal i la seva percepció: Sembla de dia",
+            "es": "Farola y su percepción: Parece de día"
           },
           "description": {
-            "en": "There is daylike perception of the lit",
-            "ca": "Sembla de dia, óptima",
-            "es": "Parece de día, óptima"
+            "en": "There is a street lamp and its lit perception is daylike",
+            "ca": "Hi ha un fanal i sembla de dia, il·luminació óptima",
+            "es": "Hay una farola y parece de día, iluminación óptima"
           }
         }
       ]

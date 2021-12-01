@@ -265,6 +265,22 @@ var config = {
 		},
 		{
 			group: 'Percep',
+			title: 'No info',
+			query: '(node[!"lit:perceived"]({{bbox}}););out meta;',
+			iconSrc: imgSrc + 'icones_llum/lit_osm_question.svg',
+			iconStyle: 'background-color:#FFFFFF',
+						scale: 1,
+			style: function () {
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+						src: imgSrc + 'icones_llum/lit_osm_question.svg'
+					})
+				});
+				return style;
+			}
+		},
+		{
+			group: 'Percep',
 			title: 'No hi ha llum (via)',
 			query: '(way[highway]["lit:perceived"="none"]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'base/dots.png',

@@ -15,14 +15,14 @@ var config = {
 		units: 'metric'
 	},
 	i18n: {
-		layersLabel: 'Layers',
-		editWith: 'Edit with:',
-		openWith: 'Open with:',
+		layersLabel: 'Capes/Layers',
+		editWith: 'Edita:',
+		openWith: 'Obre/Abre/Open:',
 		checkTools: 'Validation:',
 		copyDialog: 'S\'ha copiat l\'enllaç al porta-retalls.Enlace copiado. Link has been copied',
-		nodeLabel: 'Node:',
-		noNodesFound: 'No nodes found.',
-		wayLabel: 'Way:'
+		nodeLabel: 'Node/Nodo:',
+		noNodesFound: 'No info.',
+		wayLabel: 'Via/Way:'
 	},
 	overpassApi: function(){
 		// https://overpass-turbo.eu/
@@ -265,7 +265,7 @@ var config = {
 		},
 		{
 			group: 'Percep',
-			title: 'No info <b> Clicar aquí</b>',
+			title: 'No info',
 			query: '(node[!"lit:perceived"][highway=street_lamp]({{bbox}}););out meta;',
 			iconSrc: imgSrc + 'icones_llum/lit_osm_question.svg',
 			iconStyle: 'background-color:#FFFFFF',

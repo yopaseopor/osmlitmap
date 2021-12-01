@@ -212,7 +212,7 @@
       ],
       "hideUnderlayingFeaturesMinPercentage": 0,
       "icon": {
-        "render": "https://github.com/yopaseopor/osmlitmap/raw/master/src/img/icones_llum/lit_osm.svg",
+        "render": "https://github.com/yopaseopor/osmlitmap/raw/master/src/img/icones_llum/lit_osm_question.svg",
         "mappings": [
           {
             "if": {

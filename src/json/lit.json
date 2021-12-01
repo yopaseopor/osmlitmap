@@ -29,7 +29,7 @@
   "widenFactor": 0.01,
   "socialImage": "",
   "layers": [
-    "street_lamps",
+
     {
       "id": "lits",
       "name": {
@@ -407,7 +407,7 @@
           }
         }
       ]
-    }
+    },    "street_lamps"
   ],
   "roamingRenderings": []
 }

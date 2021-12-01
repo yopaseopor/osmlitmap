@@ -54,6 +54,7 @@
           "highway=secondary_link",
           "highway=primary_link",
           "highway=trunk_link",
+		  "highway=street_lamp"
           "highway=motorway_link",
           "highway=footway",
           {

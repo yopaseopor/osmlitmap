@@ -327,8 +327,7 @@
       "presets": [
         {
           "tags": [
-            "lit:perceived=none",
-            "highway=street_lamp"
+            "lit:perceived=none"
           ],
           "title": {
             "en": "Perceived lit: None",

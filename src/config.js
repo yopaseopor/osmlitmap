@@ -18,7 +18,7 @@ var config = {
 		layersLabel: 'Capes/Layers',
 		editWith: 'Edita:',
 		openWith: 'Obre/Abre/Open:',
-		checkTools: 'Validation:',
+		checkTools: 'Valida:',
 		copyDialog: 'S\'ha copiat l\'enllaç al porta-retalls.Enlace copiado. Link has been copied',
 		nodeLabel: 'Node/Nodo:',
 		noNodesFound: 'No info.',

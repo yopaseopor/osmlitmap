@@ -10,11 +10,18 @@ En aquest cas utilitzarem les claus:
 * lit:perceived (percepció d'il·luminació)
 
 # 1-Mapa
-Mapa basat en [Bicycle tags map](https://wiki.openstreetmap.org/wiki/Bicycle_tags_map)
 
-Amb modificacions de [Ramiro Balado](https://github.com/Qjammer)
+-Mapa basat en [Bicycle tags map](https://wiki.openstreetmap.org/wiki/Bicycle_tags_map)
 
-Versió nova Openlayers feta per [Ripollx](https://github.com/Ripollx)
+-Amb modificacions de [Ramiro Balado](https://github.com/Qjammer)
+
+-Versió nova Openlayers feta per [Ripollx](https://github.com/Ripollx)
+
+-Possibilitat d'afegir JSONs feta per [Hugoren Martinako ](https://github.com/Crashillo)
+
+-Consultes complexes afegides per [Ismael Luceno](https://github.com/ismaell)
+
+-Idees addicionals per [yopaseopor](https://github.com/yopaseopor)
 
 El mapa ens permet la mostra d'elements determinats personalitzables tenint com a fons varis mapes diferents.
 

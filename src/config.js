@@ -433,18 +433,13 @@ var config = {
 			title: 'Fanal/Farola/Street lamp',
 			query: '(node[highway=street_lamp]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'icones_llum/lit_osm.svg',
-			iconStyle: 'background-color:#229954',
+			iconStyle: 'background-color:#FFFFFF',
+						scale: 1,
 			style: function () {
-				var fill = new ol.style.Fill({
-					color: 'rgba(34,153,84,0.4)'
-				});
-				var stroke = new ol.style.Stroke({
-					color: 'rgba(34,153,84,0.4)',
-					width: 5
-				});
 				var style = new ol.style.Style({
-					fill: fill,
-					stroke: stroke
+					image: new ol.style.Icon({
+						src: imgSrc + 'icones_llum/lit_osm.svg'
+					})
 				});
 				return style;
 			}

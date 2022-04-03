@@ -430,6 +430,27 @@ var config = {
 		},
 		{
 			group: 'Enllumenat/Alumbrado/Lit',
+			title: 'Fanal/Farola/Street lamp',
+			query: '(node[highway][highway=street_lamp]({{bbox}});node(w););out;',
+			iconSrc: imgSrc + 'icones_llum/lit_osm.svg',
+			iconStyle: 'background-color:#229954',
+			style: function () {
+				var fill = new ol.style.Fill({
+					color: 'rgba(34,153,84,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(34,153,84,0.4)',
+					width: 5
+				});
+				var style = new ol.style.Style({
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+		},
+		{
+			group: 'Enllumenat/Alumbrado/Lit',
 			title: 'No',
 			query: '(way[highway][lit=no]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'base/line.png',

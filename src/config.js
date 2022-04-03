@@ -387,6 +387,27 @@ var config = {
 			}
 		},
 		{
+			group: 'Percepció/n/Perception(via/way)',
+			title: 'No info',
+			query: '(way[highway][!"lit:perceived"]({{bbox}});node(w););out;',
+			iconSrc: imgSrc + 'base/line.png',
+			iconStyle: 'background-color:#00ff4d',
+			style: function () {
+				var fill = new ol.style.Fill({
+					color: 'rgba(0,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: 'rgba(0,0,0,0.4)',
+					width: 5
+				});
+				var style = new ol.style.Style({
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+		},
+		{
 			group: 'Enllumenat/Alumbrado/Lit',
 			title: 'Sí/Yes',
 			query: '(way[highway][lit=yes]({{bbox}});node(w););out;',

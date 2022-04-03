@@ -15,7 +15,7 @@ var config = {
 		units: 'metric'
 	},
 	i18n: {
-		layersLabel: 'Capes/Layers',
+		layersLabel: 'Capes/Capas/Layers',
 		editWith: 'Edita:',
 		openWith: 'Obre/Abre/Open:',
 		checkTools: 'Valida:',
@@ -184,8 +184,8 @@ var config = {
 				
 		
 		{
-			group: 'Percep',
-			title: 'No hi ha llum',
+			group: 'Percepció/n/Perception',
+			title: 'No llum/No luz/No light',
 			query: '(node["lit:perceived"="none"]({{bbox}}););out meta;',
 			iconSrc: imgSrc + 'icones_llum/lit_osm_none.svg',
 			iconStyle: 'background-color:#FFFFFF',
@@ -200,8 +200,8 @@ var config = {
 			}
 		},
 		{
-			group: 'Percep',
-			title: 'Llum mínima',
+			group: 'Percepció/n/Perception',
+			title: 'Mínima/Minimal',
 			query: '(node["lit:perceived"="minimal"]({{bbox}}););out meta;',
 			iconSrc: imgSrc + 'icones_llum/lit_osm_minimal.svg',
 			iconStyle: 'background-color:#FFFFFF',
@@ -216,8 +216,8 @@ var config = {
 			}
 		},
 		{
-			group: 'Percep',
-			title: 'Llum pobra',
+			group: 'Percepció/n/Perception',
+			title: 'Pobra/Pobre/Poor',
 			query: '(node["lit:perceived"="poor"]({{bbox}}););out meta;',
 			iconSrc: imgSrc + 'icones_llum/lit_osm_poor.svg',
 			iconStyle: 'background-color:#FFFFFF',
@@ -232,8 +232,8 @@ var config = {
 			}
 		},
 		{
-			group: 'Percep',
-			title: 'Bona llum',
+			group: 'Percepció/n/Perception',
+			title: 'Bona/Buena/Good',
 			query: '(node["lit:perceived"="good"]({{bbox}}););out meta;',
 			iconSrc: imgSrc + 'icones_llum/lit_osm_good.svg',
 			iconStyle: 'background-color:#FFFFFF',
@@ -248,8 +248,8 @@ var config = {
 			}
 		},
 		{
-			group: 'Percep',
-			title: 'Com si fos de dia',
+			group: 'Percepció/n/Perception',
+			title: 'De dia/Daylight',
 			query: '(node["lit:perceived"="daylike"]({{bbox}}););out meta;',
 			iconSrc: imgSrc + 'icones_llum/lit_osm_daylike.svg',
 			iconStyle: 'background-color:#FFFFFF',
@@ -264,7 +264,7 @@ var config = {
 			}
 		},
 		{
-			group: 'Percep',
+			group: 'Percepció/n/Perception',
 			title: 'No info',
 			query: '(node[!"lit:perceived"][highway=street_lamp]({{bbox}}););out meta;',
 			iconSrc: imgSrc + 'icones_llum/lit_osm_question.svg',
@@ -280,8 +280,8 @@ var config = {
 			}
 		},
 		{
-			group: 'Percep',
-			title: 'No hi ha llum (via)',
+			group: 'Percepció/n/Perception(via/way)',
+			title: 'No llum/No luz/No light',
 			query: '(way[highway]["lit:perceived"="none"]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'base/dots.png',
 			iconStyle: 'background-color:#000000',
@@ -301,8 +301,8 @@ var config = {
 			}
 		},
 		{
-			group: 'Percep',
-			title: 'Llum mínima (via)',
+			group: 'Percepció/n/Perception(via/way)',
+			title: 'Mínima/Minimal',
 			query: '(way[highway]["lit:perceived"="minimal"]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'base/tdot.png',
 			iconStyle: 'background-color:#394b3e',
@@ -324,8 +324,8 @@ var config = {
 			}
 		},
 		{
-			group: 'Percep',
-			title: 'Llum pobra (via)',
+			group: 'Percepció/n/Perception(via/way)',
+			title: 'Pobra/Pobre/Poor',
 			query: '(way[highway]["lit:perceived"="poor"]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'base/tdot2.png',
 			iconStyle: 'background-color:#39804e',
@@ -345,8 +345,8 @@ var config = {
 			}
 		},
 		{
-			group: 'Percep',
-			title: 'Llum bona (via)',
+			group: 'Percepció/n/Perception(via/way)',
+			title: 'Bona/Buena/Good',
 			query: '(way[highway]["lit:perceived"="good"]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'base/lineline.png',
 			iconStyle: 'background-color:#2bc95b',
@@ -366,8 +366,8 @@ var config = {
 			}
 		},
 		{
-			group: 'Percep',
-			title: 'Com si fos de dia (via)',
+			group: 'Percepció/n/Perception(via/way)',
+			title: 'De dia/Daylight',
 			query: '(way[highway]["lit:perceived"="daylike"]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'base/line.png',
 			iconStyle: 'background-color:#00ff4d',
@@ -387,8 +387,8 @@ var config = {
 			}
 		},
 		{
-			group: 'Enllumenat',
-			title: 'Enllumenat sí',
+			group: 'Enllumenat/Alumbrado/Lit',
+			title: 'Sí/Yes',
 			query: '(way[highway][lit=yes]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'base/line.png',
 			iconStyle: 'background-color:#229954',
@@ -408,8 +408,8 @@ var config = {
 			}
 		},
 		{
-			group: 'Enllumenat',
-			title: 'Enllumenat no',
+			group: 'Enllumenat/Alumbrado/Lit',
+			title: 'No',
 			query: '(way[highway][lit=no]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'base/line.png',
 			iconStyle: 'background-color:#000000',
@@ -429,8 +429,8 @@ var config = {
 			}
 		},
 		{
-			group: 'Enllumenat',
-			title: 'Sense dades',
+			group: 'Enllumenat/Alumbrado/Lit',
+			title: 'Sense dades/Sin datos/No data',
 			query: '(way[highway][!lit]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'base/line.png',
 			iconStyle: 'background-color:#FF0000',

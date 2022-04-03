@@ -431,7 +431,7 @@ var config = {
 		{
 			group: 'Enllumenat/Alumbrado/Lit',
 			title: 'Fanal/Farola/Street lamp',
-			query: '(node[highway][highway=street_lamp]({{bbox}});node(w););out;',
+			query: '(node[highway=street_lamp]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'icones_llum/lit_osm.svg',
 			iconStyle: 'background-color:#229954',
 			style: function () {

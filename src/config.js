@@ -280,6 +280,22 @@ var config = {
 			}
 		},
 		{
+			group: 'Enllumenat/Alumbrado/Lit',
+			title: 'Fanal/Farola/Street lamp',
+			query: '(node[highway=street_lamp]({{bbox}});node(w););out;',
+			iconSrc: imgSrc + 'icones_llum/lit_osm.svg',
+			iconStyle: 'background-color:#FFFFFF',
+						scale: 1,
+			style: function () {
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+						src: imgSrc + 'icones_llum/lit_osm.svg'
+					})
+				});
+				return style;
+			}
+		},
+		{
 			group: 'Percepció/n/Perception(via/way)',
 			title: 'No llum/No luz/No light',
 			query: '(way[highway]["lit:perceived"="none"]({{bbox}});node(w););out;',
@@ -391,7 +407,7 @@ var config = {
 			title: 'No info',
 			query: '(way[highway][!"lit:perceived"]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'base/line.png',
-			iconStyle: 'background-color:#00ff4d',
+			iconStyle: 'background-color:#000000',
 			style: function () {
 				var fill = new ol.style.Fill({
 					color: 'rgba(0,0,0,0.4)'
@@ -427,23 +443,9 @@ var config = {
 				});
 				return style;
 			}
+
 		},
-		{
-			group: 'Enllumenat/Alumbrado/Lit',
-			title: 'Fanal/Farola/Street lamp',
-			query: '(node[highway=street_lamp]({{bbox}});node(w););out;',
-			iconSrc: imgSrc + 'icones_llum/lit_osm.svg',
-			iconStyle: 'background-color:#FFFFFF',
-						scale: 1,
-			style: function () {
-				var style = new ol.style.Style({
-					image: new ol.style.Icon({
-						src: imgSrc + 'icones_llum/lit_osm.svg'
-					})
-				});
-				return style;
-			}
-		},
+
 		{
 			group: 'Enllumenat/Alumbrado/Lit',
 			title: 'No',
@@ -486,6 +488,22 @@ var config = {
 				return style;
 			}
 			
+		},
+		{
+			group: 'Enllumenat/Alumbrado/Lit',
+			title: 'Fanal/Farola/Street lamp',
+			query: '(node[highway=street_lamp]({{bbox}});node(w););out;',
+			iconSrc: imgSrc + 'icones_llum/lit_osm.svg',
+			iconStyle: 'background-color:#FFFFFF',
+						scale: 1,
+			style: function () {
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+						src: imgSrc + 'icones_llum/lit_osm.svg'
+					})
+				});
+				return style;
+			}
 		}
 	],
 

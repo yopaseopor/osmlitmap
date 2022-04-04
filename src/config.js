@@ -280,7 +280,7 @@ var config = {
 			}
 		},
 		{
-			group: 'Enllumenat/Alumbrado/Lit',
+			group: 'Percepció/n/Perception',
 			title: 'Fanal/Farola/Street lamp',
 			query: '(node[highway=street_lamp]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'icones_llum/lit_osm.svg',

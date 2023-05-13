@@ -32,6 +32,7 @@
 
     {
       "id": "lits",
+	        "allowSplit": true,
       "name": {
         "en": "Cover lits info",
         "ca": "Cobreix informació sobre il·luminació",
@@ -44,6 +45,7 @@
           "highway=living_street",
           "highway=pedestrian",
           "highway=tertiary",
+		  "highway=steps",
           "highway=service",
           "highway=unclassified",
           "highway=secondary",
@@ -312,7 +314,7 @@
           {
             "if": {
               "and": [
-                "lit!~"
+                "lit="
               ]
             },
             "then": {
